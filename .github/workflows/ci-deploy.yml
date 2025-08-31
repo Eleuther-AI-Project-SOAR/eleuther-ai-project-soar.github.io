@@ -17,6 +17,9 @@ jobs:
     steps:
       # Checks out your repository
       - uses: actions/checkout@v4
+        with:
+          submodules: true   # pulls in submodules
+
 
       # Set up Node.js
       - name: Set up Node.js
