@@ -20,7 +20,6 @@ jobs:
         with:
           submodules: true   # pulls in submodules
 
-
       # Set up Node.js
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -50,5 +49,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: ./dist
+          publish_branch: gh-pages   # branch to push to
+          publish_dir: ./dist        # what gets published
+          force_orphan: true         # makes a fresh commit each deploy
