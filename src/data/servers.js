@@ -830,6 +830,16 @@ export const servers = [
     "features": []
   },
   {
+    "name": "PauseAI",
+    "rating": 6.5,
+    "tag": "Alignment",
+    "activityLevel": "Semi Active",
+    "language": "",
+    "location": "Discord",
+    "description": "",
+    "features": []
+  },
+  {
     "name": "Tonic's better prompts",
     "rating": 6.4,
     "tag": "Generalish?Research",
